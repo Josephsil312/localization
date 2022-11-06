@@ -22,7 +22,7 @@ const LanguageSetting = () => {
       .then(() => setLanguage(value))
       .catch(err => console.log(err));
   };
-  
+
   useEffect(() => {
     setTimeout(() => {
       setShowMe(false)
@@ -46,8 +46,8 @@ const LanguageSetting = () => {
               >
                 <Text style={{ color: "white", fontSize: 17, fontWeight: '600' }}>{t('text_cancel')}</Text>
                 <Text style={{ color: "white", fontSize: 17, fontWeight: '600' }}>{t('text_language')}</Text>
-                <TouchableOpacity disabled = {!dis} onPress={() => { { dis && changeLanguage(selectLanguage) }; setDis(false) }}>
-                  <Text style={[styles.apply,(!dis ? styles.disabled : styles.enabled)]}>Apply</Text>
+                <TouchableOpacity disabled={!dis} onPress={() => { { dis && changeLanguage(selectLanguage) }; setDis(false) }}>
+                  <Text style={[styles.apply, (!dis ? styles.disabled : styles.enabled)]}>Apply</Text>
                 </TouchableOpacity>
               </View>
               <View style={{ left: 40, top: 100 }}>
@@ -55,13 +55,11 @@ const LanguageSetting = () => {
                 <Text style={{ fontSize: 15 }}>Elige tu idioma.</Text>
               </View>
               <View style={styles.languageChoose}>
-
                 <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                   <Text>English</Text>
                   <View style={{ marginBottom: 10 }}>
                     <RoundCheckbox backgroundColor={'#0091EA'} size={20} checked={one} onValueChange={() => { setSelectLanguage('en'); setOne(true); setTwo(false); setDis(true) }} />
                   </View>
-
                 </View>
                 <View style={{ borderWidth: 0.3 }} />
                 <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
@@ -69,7 +67,6 @@ const LanguageSetting = () => {
                   <View style={{ marginTop: 10 }}>
                     <RoundCheckbox backgroundColor={'#0091EA'} size={20} checked={two} onValueChange={() => { setSelectLanguage('es'); setOne(false); setTwo(true); setDis(true) }} />
                   </View>
-
                 </View>
               </View>
             </View>
