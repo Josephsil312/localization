@@ -3,11 +3,11 @@
       
       "text_cancel":"Canceler",
       "text_language": "Idioma",
-      "Choose_your_language": "Elige tu idioma",
-      "My_RTS":"My RTS",
-      "Frieght":"Frieght",
-      "Fuel":"Fuel",
-      "Factoring":"Factoring",
-      "More": "Más"
+      "choose_your_language": "Elige tu idioma",
+      "my_rts":"My RTS",
+      "frieght":"Frieght",
+      "fuel":"Fuel",
+      "factoring":"Factoring",
+      "more": "Más"
     }
   }

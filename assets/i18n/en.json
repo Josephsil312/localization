@@ -4,11 +4,15 @@
       "hello":"Hello",
       "text_cancel":"Cancel",
       "text_language": "Language",
-      "Choose_your_language": "Choose your language",
-      "My_RTS":"My RTS",
-      "Frieght":"Frieght",
-      "Fuel":"Fuel",
-      "Factoring":"Factoring",
-      "More":"More"
+      "choose_your_language": "Choose your language",
+      "my_rts":"My RTS",
+      "frieght":"Frieght",
+      "fuel":"Fuel",
+      "factoring":"Factoring",
+      "more":"More"
+    },
+
+    "landing screen":{
+      
     }
   }
