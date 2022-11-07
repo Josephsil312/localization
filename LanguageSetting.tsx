@@ -52,7 +52,7 @@ const LanguageSetting = () => {
                 </TouchableOpacity>
              
               </View>
-              <View style={{ left: 40, top: 100 }}>
+              <View style={{ left: 37, top: 100 }}>
                 <Text style={{ fontSize: 15,color:'#666666' }}>{t('choose_your_language')}</Text>
                 <Text style={{ fontSize: 15,color: '#666666' }}>Elige tu idioma.</Text>
               </View>
@@ -65,7 +65,7 @@ const LanguageSetting = () => {
                 </View>
                 <View style={{ borderWidth: 0.3,borderColor:'#666666' }} />
                 <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
-                  <Text style={{ marginTop: 10 }}>Espanol-Spanish</Text>
+                  <Text style={{ marginTop: 10 }}>Español<Text style = {{color:'#666666'}}> - Spanish</Text></Text>
                   <View style={{ marginTop: 10 }}>
                     <RoundCheckbox backgroundColor={'#0091EA'} size={20} checked={two} onValueChange={() => { setSelectLanguage('es'); setOne(false); setTwo(true); setDis(true) }} />
                   </View>
@@ -80,7 +80,7 @@ const LanguageSetting = () => {
         <View>
           <View style={styles.navigation}>
             <Text style={{ fontSize: 14, color: '#888888' }}>{t('my_rts')}</Text>
-            <Text style={{ fontSize: 14, color: '#888888' }}>{t('fieght')}</Text>
+            <Text style={{ fontSize: 14, color: '#888888' }}>{t('frieght')}</Text>
             <Text style={{ fontSize: 14, color: '#888888' }}>{t('fuel')}</Text>
             <Text style={{ fontSize: 14, color: '#888888' }}>{t('factoring')}</Text>
             <Text style={{ fontSize: 14, color: '#888888' }}>{t('more')}</Text>
