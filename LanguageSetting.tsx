@@ -35,24 +35,26 @@ const LanguageSetting = () => {
         <View>
           <View style={styles.ContainerSettings}>
             <View
-              style={{ width: "100%", backgroundColor: "#0091EA", height: 90 }}
+              style={{ width: "100%", backgroundColor: "#0091EA", height: windowHeight-630 }}
             >
+             
               <View
                 style={{
                   flexDirection: "row",
                   justifyContent: "space-around",
-                  top: 50,
+                  top:'13%'
                 }}
               >
                 <Text style={{ color: "white", fontSize: 17, fontWeight: '600' }}>{t('text_cancel')}</Text>
                 <Text style={{ color: "white", fontSize: 17, fontWeight: '600' }}>{t('text_language')}</Text>
                 <TouchableOpacity disabled={!dis} onPress={() => { { dis && changeLanguage(selectLanguage) }; setDis(false) }}>
-                  <Text style={[styles.apply, (!dis ? styles.disabled : styles.enabled)]}>Apply</Text>
+                  <Text style={[styles.apply, (!dis ? styles.disabled : styles.enabled)]}>{t('apply')}</Text>
                 </TouchableOpacity>
+             
               </View>
               <View style={{ left: 40, top: 100 }}>
-                <Text style={{ fontSize: 15 }}>{t('choose_your_language')}</Text>
-                <Text style={{ fontSize: 15 }}>Elige tu idioma.</Text>
+                <Text style={{ fontSize: 15,color:'#666666' }}>{t('choose_your_language')}</Text>
+                <Text style={{ fontSize: 15,color: '#666666' }}>Elige tu idioma.</Text>
               </View>
               <View style={styles.languageChoose}>
                 <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
@@ -61,7 +63,7 @@ const LanguageSetting = () => {
                     <RoundCheckbox backgroundColor={'#0091EA'} size={20} checked={one} onValueChange={() => { setSelectLanguage('en'); setOne(true); setTwo(false); setDis(true) }} />
                   </View>
                 </View>
-                <View style={{ borderWidth: 0.3 }} />
+                <View style={{ borderWidth: 0.3,borderColor:'#666666' }} />
                 <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
                   <Text style={{ marginTop: 10 }}>Espanol-Spanish</Text>
                   <View style={{ marginTop: 10 }}>
@@ -114,7 +116,7 @@ const LanguageSetting = () => {
 
         </View>
 
-        <View style={{ borderWidth: 0.3, top: windowHeight - 90 }} />
+        <View style={{ borderWidth: 0.3, top: windowHeight - 100, borderColor:'#666666' }} />
 
       </SafeAreaView>
 
@@ -149,12 +151,14 @@ const styles = StyleSheet.create({
     height: 'auto',
     padding: 15,
     color: "#E0E0E0",
-
+    borderColor:'white',
+    
+    shadowColor: '#171717'
   },
   navigation: {
     flexDirection: "row",
     justifyContent: "space-around",
-    top: windowHeight - 20,
+    top: windowHeight - 25,
   },
   logo: {
     width: 25,
@@ -163,6 +167,6 @@ const styles = StyleSheet.create({
   icons: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    top: windowHeight - 60
+    top: windowHeight - 70
   }
 });
